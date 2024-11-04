@@ -1,29 +1,15 @@
-export function Header() {
+import styles from "./Avatar.module.css"
+import { ImgHTMLAttributes } from "react"
+
+interface AvatarProps extends ImgHTMLAttributes<HTMLImageElement> {
+  hasBorder?: boolean
+}
+
+export function Avatar({ hasBorder = true, ...props }: AvatarProps) {
   return (
-    <header>
-      <div>
-        <div>
-          <p>Yago Belo Massaroni</p>
-          <div>
-            <a href="/">twitter</a>
-            <a href="/">github</a>
-            <a href="/">linkedin</a>
-          </div>
-        </div>
-        <div>
-          <button>
-            <img src="https://picsum.photos/200" alt="Random Image" />
-          </button>
-
-          <button>
-            <img src="https://picsum.photos/200" alt="Random Image" />
-          </button>
-
-          <button>
-            <img src="https://picsum.photos/200" alt="Random Image" />
-          </button>
-        </div>
-      </div>
-    </header>
+    <img
+      className={hasBorder ? styles.avatarWithBorder : styles.avatar}
+      {...props}
+    />
   )
 }
