@@ -8,3 +8,15 @@
 .header img {
   height: 2rem;
 }
+
+.header a {
+  text-decoration: none; /* Aplica sublinhado */
+}
+
+.header a span{
+  color: var(--gray-100);
+  line-height: 1.6;
+  font-size: 1.3rem;
+  margin-left: 1rem;
+  padding-bottom: 1rem;
+}

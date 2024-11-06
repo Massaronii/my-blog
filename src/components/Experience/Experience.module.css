@@ -1,0 +1,13 @@
+.sidebar {
+  background: var(--gray-800);
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 1rem;
+  text-align: justify;
+}
+.sidebar span{
+  color: var(--gray-500);
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
