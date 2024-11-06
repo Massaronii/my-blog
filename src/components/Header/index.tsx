@@ -5,13 +5,13 @@ export function Header() {
   return (
     <header className={styles.header}>
       <a href="">
-        <span>Home</span>
+       Home
       </a>
       <a href="">
-        <span>Projetos</span>
+        Projetos
       </a>
       <a href="">
-        <span>Artigos</span>
+        Artigos
       </a>
     </header>
   )
