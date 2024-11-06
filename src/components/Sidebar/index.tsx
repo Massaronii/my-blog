@@ -5,6 +5,7 @@ import { FaGithub } from "react-icons/fa"
 import { FaEnvelope, FaXTwitter } from "react-icons/fa6"
 import { FaWhatsapp } from "react-icons/fa"
 import { Technologies } from "../Technologies"
+import { Aboutme } from "../Aboutme"
 
 export function Sidebar() {
   return (
@@ -58,6 +59,7 @@ export function Sidebar() {
           </a>
         </div>
       </div>
+      <Aboutme/>
       <Technologies />
     </aside>
   )

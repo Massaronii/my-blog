@@ -5,12 +5,8 @@
   padding: 1.25rem 0;
 }
 
-.header img {
-  height: 2rem;
-}
-
 .header a {
-  text-decoration: none; /* Aplica sublinhado */
+  text-decoration: none; 
 }
 
 .header a span{
