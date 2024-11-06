@@ -1,0 +1,24 @@
+.technologies {
+  background: var(--gray-800);
+  border-radius: 8px;
+  overflow: hidden;
+  text-align:center;
+}
+.technologies strong {
+  color: var(--gray-100);
+  line-height: 2;
+  font-size: 1.2rem;
+}
+.technologies span {
+  margin-left: 0.7rem;
+  border: none;      
+  outline: none;     
+  text-decoration: none;
+}
+
+.technologies div {
+margin-top: 0.5rem;
+margin-bottom: 1rem;
+ 
+}
+

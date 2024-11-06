@@ -1,9 +1,10 @@
 import styles from "./Sidebar.module.css"
 import { Avatar } from "../Avatar"
-import { FaLinkedin } from "react-icons/fa"
+import {  FaLinkedin } from "react-icons/fa"
 import { FaGithub } from "react-icons/fa"
-import { FaXTwitter } from "react-icons/fa6"
-
+import { FaEnvelope, FaXTwitter } from "react-icons/fa6"
+import { FaWhatsapp } from "react-icons/fa"
+import { Technologies } from "../Technologies"
 
 export function Sidebar() {
   return (
@@ -21,11 +22,11 @@ export function Sidebar() {
 
         <div>
           <a
-            href="https://www.linkedin.com/in/yago-massaroni-a226281ba/"
+            href="https://x.com/devyagoo"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedin size={25} color="white" />
+            <FaXTwitter size={25} color="white" />
           </a>
 
           <a
@@ -37,14 +38,27 @@ export function Sidebar() {
           </a>
 
           <a
-            href="https://twitter.com/seu_usuario"
+            href="https://www.linkedin.com/in/yago-massaroni-a226281ba/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaXTwitter size={25} color="white" />
+            <FaLinkedin size={25} color="white" />
+          </a>
+
+          <a
+            href="https://wa.me/5521971787414"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaWhatsapp size={30} color="white" />
+          </a>
+
+          <a href="mailto:yagosonicmassaroni@gmail.com">
+            <FaEnvelope size={30} color="white" />
           </a>
         </div>
       </div>
+      <Technologies />
     </aside>
   )
 }

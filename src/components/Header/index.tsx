@@ -10,6 +10,9 @@ export function Header() {
       <a href="">
         <span>Projetos</span>
       </a>
+      <a href="">
+        <span>Artigos</span>
+      </a>
     </header>
   )
 }
