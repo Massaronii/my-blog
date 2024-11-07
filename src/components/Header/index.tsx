@@ -1,18 +1,15 @@
-import styles from "./Header.module.css"
+import { Link } from "react-router-dom"
+import styles from "./style.module.css"
 
 
 export function Header() {
   return (
     <header className={styles.header}>
-      <a href="">
-       Home
-      </a>
-      <a href="">
-        Projetos
-      </a>
-      <a href="">
-        Artigos
-      </a>
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="/project">Projetos</Link>
+        <Link to="/articles">Artigos</Link>
+      </nav>
     </header>
   )
 }

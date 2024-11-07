@@ -1,4 +1,4 @@
-import styles from "./Experience.module.css"
+import styles from "./style.module.css"
 
 
 export function Experience() {
