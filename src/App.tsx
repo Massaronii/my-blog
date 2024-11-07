@@ -13,13 +13,13 @@ export function App() {
       <Header />
       <div className={styles.wrapper}>
         <Sidebar />
-      </div>
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/project" element={<Projects />} />
-        <Route path="/articles" element={<Articles />} />
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/project" element={<Projects />} />
+          <Route path="/articles" element={<Articles />} />
+        </Routes>
+      </div>
     </Router>
   )
 }

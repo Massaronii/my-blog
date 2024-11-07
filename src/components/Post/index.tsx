@@ -22,7 +22,7 @@ export function Post({ publishedAt, content }: PostProps) {
     <article className={styles.post}>
       <header>
         <div className={styles.author}>
-         
+          <h3>Titulo</h3>
         </div>
 
         <time
@@ -40,7 +40,8 @@ export function Post({ publishedAt, content }: PostProps) {
           } else if (line.type === "link") {
             return (
               <p key={line.content}>
-                <a href="#">{line.content}</a>
+                <a href={line.content
+                }>{line.content}</a>
               </p>
             )
           }
