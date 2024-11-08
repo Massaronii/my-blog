@@ -22,7 +22,7 @@ export function Post({ publishedAt, content }: PostProps) {
     <article className={styles.post}>
       <header>
         <div className={styles.author}>
-          <h3>Titulo</h3>
+
         </div>
 
         <time
@@ -36,7 +36,7 @@ export function Post({ publishedAt, content }: PostProps) {
       <div className={styles.content}>
         {content.map((line) => {
           if (line.type === "paragraph") {
-            return <p key={line.content}>{line.content}</p>
+            return <h3 key={line.content}>{line.content}</h3> 
           } else if (line.type === "link") {
             return (
               <p key={line.content}>

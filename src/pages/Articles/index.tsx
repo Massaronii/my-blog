@@ -1,10 +1,10 @@
 import { Post } from "../../components/Post";
-import {responsePosts} from "../../utils/constantes"
+import {responseArticles} from "../../utils/constantes"
 
 export function Articles() {
   return (
     <main>
-      {responsePosts.map((post) => {
+      {responseArticles.map((post) => {
         return (
           <Post
             key={post.id}
@@ -12,7 +12,7 @@ export function Articles() {
             publishedAt={post.publishedAt}
             id={post.id}
           />
-        )  
+        )
       })}
     </main>
   )
